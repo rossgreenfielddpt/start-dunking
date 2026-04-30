@@ -1,485 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="facebook-domain-verification" content="1tdzbrizsi4rrux1c8mg8gska2mu96" />
 <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Every YouTube Jump Program Told Me to Train Harder. I Did, For 6 Months. Here's What Actually Happened.</title>
-<meta name="description" content="I followed every workout, every drill, every program I could find. I trained harder than anyone on my team. Six months later my vert was lower than when I started.">
-<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700,700italic" rel="stylesheet">
+<title>He Couldn't Touch Rim All Summer. 21 Days Later He Was Dunking On His Own Hoop.</title>
+<meta name="description" content="It's not your genetics. It's not your height. It's not even how hard you're training. The hoopers who finally start dunking figured out one specific thing, and it has nothing to do with lifting more weight.">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Source Serif Pro', Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 1.7em;
-  color: #2a2a2a;
-  background: #fafafa;
+  line-height: 1.5em;
+  color: rgb(47, 47, 47);
+  background: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
-img { max-width: 100%; height: auto; display: block; }
+img { max-width: 100%; height: auto; }
 
-/* ── Top brand nav ── */
-.brand-nav {
-  background: #fff;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 16px 0;
+/* ── Top bar ── */
+.top-bar {
+  background-color: #333333;
+  padding: 10px 0;
 }
-.brand-inner {
-  max-width: 1100px;
+.top-bar-inner {
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.advertorial-label {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+}
+.trending-label {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(161, 167, 178);
+  line-height: 1em;
   text-align: center;
 }
-.brand-name {
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: #111;
-  letter-spacing: -0.5px;
-  line-height: 1;
-}
-.brand-tagline {
-  font-family: Montserrat, sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  color: #888;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 6px;
+
+/* ── Content wrapper ── */
+.content-wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
 }
 
-/* ── Article wrapper ── */
-.article-wrap {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 30px 20px 60px;
+.main-col {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 0 40px;
+}
+
+/* ── Right rail ── */
+.right-rail {
+  flex: 0 0 300px;
+  padding: 20px 0;
+}
+
+.rail-sticky {
+  position: sticky;
+  top: 20px;
+}
+
+.rail-cta-box {
+  border: 1px solid #ddd;
+  padding: 0 0 20px;
   background: #fff;
 }
 
-@media (min-width: 760px) {
-  .article-wrap {
-    margin: 30px auto;
-    padding: 50px 60px 60px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  }
-}
-
-/* ── Tags ── */
-.article-tags {
-  display: flex;
-  gap: 14px;
-  font-family: Montserrat, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 22px;
-}
-.tag-cat { color: #e85d1f; }
-.tag-sponsored { color: #888; }
-
-/* ── Headline ── */
-h1.headline {
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1.2em;
-  color: #111;
-  margin-bottom: 22px;
-  letter-spacing: -0.5px;
-}
-@media (max-width: 600px) { h1.headline { font-size: 28px; } }
-
-/* ── Dek ── */
-.dek {
-  font-size: 20px;
-  line-height: 1.55em;
-  color: #555;
-  margin-bottom: 28px;
-}
-
-/* ── Byline ── */
-.byline-block {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 32px;
-}
-.author-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.rail-cta-header {
   background: #e85d1f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #fff;
   font-family: Montserrat, sans-serif;
+  font-size: 13px;
   font-weight: 700;
-  font-size: 16px;
-  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 14px;
+  text-align: center;
 }
-.byline-text {
+
+.rail-stat {
+  padding: 18px 16px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.rail-stat-num {
   font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #111;
+  line-height: 1;
+}
+
+.rail-stat-label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+  line-height: 1.4em;
+}
+
+.rail-testimonial {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
   font-size: 13px;
   line-height: 1.5em;
-  color: #555;
-}
-.byline-text .author-name {
-  font-weight: 700;
-  color: #111;
-  font-size: 14px;
-  display: block;
-  margin-bottom: 2px;
-}
-
-/* ── Body paragraphs ── */
-.article-wrap p {
-  font-size: 18px;
-  line-height: 1.75em;
-  margin-bottom: 22px;
-  color: #2a2a2a;
-}
-
-/* ── Section H2 ── */
-h2.section-title {
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.3em;
-  color: #111;
-  margin: 44px 0 18px;
-  letter-spacing: -0.3px;
-}
-@media (max-width: 600px) { h2.section-title { font-size: 23px; } }
-
-/* ── Inline image with caption ── */
-.inline-img {
-  margin: 32px 0;
-}
-.inline-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  display: block;
-}
-.inline-img-box {
-  background: #ececec;
-  border: 1px dashed #c5c5c5;
-  padding: 90px 20px;
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  color: #888;
-  font-style: italic;
-  letter-spacing: 1px;
-}
-.inline-img-caption {
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #777;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 1.5em;
-}
-
-/* ── Big pull quotes ── */
-.big-pull {
-  border-left: 4px solid #e85d1f;
-  padding: 8px 0 8px 24px;
-  margin: 32px 0;
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-style: italic;
-  font-size: 22px;
-  line-height: 1.5em;
-  color: #1a1a1a;
-  font-weight: 500;
-}
-@media (max-width: 600px) { .big-pull { font-size: 18px; } }
-
-/* ── Explainer / stat box ── */
-.explainer {
-  background: #fff8f3;
-  border: 1px solid #f5cdb0;
-  padding: 24px 26px;
-  margin: 32px 0;
-  border-radius: 4px;
-}
-.explainer-title {
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #e85d1f;
-  margin-bottom: 12px;
-}
-.explainer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.explainer-list li {
-  padding: 8px 0 8px 22px;
-  position: relative;
-  font-size: 16px;
-  line-height: 1.55em;
   color: #333;
-  border-bottom: 1px solid rgba(245, 205, 176, 0.5);
 }
-.explainer-list li:last-child { border-bottom: none; }
-.explainer-list li::before {
-  content: '•';
-  color: #e85d1f;
-  font-weight: 700;
-  position: absolute;
-  left: 4px;
-  top: 8px;
-  font-size: 18px;
-}
-.explainer p {
-  font-size: 16px;
-  line-height: 1.65em;
-  color: #333;
-  margin-bottom: 12px;
-}
-.explainer p:last-child { margin-bottom: 0; }
 
-/* ── Soft inline CTA ── */
-.soft-cta {
-  background: #fafafa;
-  border-left: 4px solid #e85d1f;
-  padding: 20px 24px;
-  margin: 30px 0;
-}
-.soft-cta-title {
-  font-family: 'Source Serif Pro', Georgia, serif;
+.rail-testimonial .rt-name {
   font-weight: 700;
-  font-size: 18px;
+  margin-top: 8px;
   color: #111;
-  margin-bottom: 8px;
+  font-size: 12px;
 }
-.soft-cta p {
-  font-size: 16px;
-  line-height: 1.55em;
+
+.rail-testimonial .rt-stars {
+  color: #f5a623;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.rail-cta-inner {
+  padding: 16px 16px 0;
+}
+
+.rail-cta-inner p {
+  font-size: 14px;
+  line-height: 1.5em;
   color: #444;
   margin-bottom: 12px;
 }
-.soft-cta a {
-  color: #e85d1f;
+
+.rail-button {
+  display: block;
+  width: 100%;
+  background-color: #e85d1f;
+  color: #fff;
   font-family: Montserrat, sans-serif;
+  font-size: 15px;
   font-weight: 700;
-  font-size: 14px;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 7px 1px rgba(0,0,0,0.19);
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+
+.rail-button:hover { background: #c94c14; }
+
+.rail-price-strike {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 6px;
+}
+.rail-price-strike s { color: #c0392b; }
+
+.rail-subtext {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 900px) {
+  .content-wrap { display: block; }
+  .right-rail { display: none; }
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b7b7b7;
+  line-height: 1em;
+  padding: 14px 0 10px;
+}
+.breadcrumb a { color: #b7b7b7; text-decoration: none; }
+
+/* ── Headline ── */
+.headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.25em;
+  margin-bottom: 14px;
+}
+
+.subheadline {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5em;
+  margin-bottom: 18px;
+}
+
+/* ── Stars / ratings ── */
+.ratings-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.stars { color: #f5a623; font-size: 16px; letter-spacing: 1px; }
+.rating-count { font-size: 13px; color: #777; }
+
+/* ── Byline ── */
+.byline {
+  font-size: 13px;
+  color: #777;
+  padding: 8px 0 16px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.byline-name { font-weight: 700; color: #333; }
+.byline-verified { color: #e85d1f; font-weight: 600; }
+
+/* ── Hero image placeholder ── */
+.hero-img {
+  background: #e9e9e9;
+  border: 1px dashed #bbb;
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  padding: 80px 20px;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+/* ── Disclosure ── */
+.disclosure {
+  background: #fff8e6;
+  border-left: 3px solid #f5a623;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 24px;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.soft-cta a:hover { text-decoration: underline; }
 
-/* ── Comparison table ── */
-.comparison {
-  background: #fff;
-  border: 1px solid #ddd;
-  margin: 32px 0;
-  border-radius: 4px;
-  overflow: hidden;
+/* ── Body paragraphs ── */
+.main-col p {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #333;
 }
-.comparison-header {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 14px 18px;
+
+/* ── Section headers ── */
+.section-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3em;
+  margin: 14px 0 14px;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 28px 0;
+}
+
+/* ── Pull quote ── */
+.pull-quote {
+  background: #f7f7f7;
+  border-left: 4px solid #e85d1f;
+  padding: 18px 22px;
+  margin: 18px 0;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.6em;
+  color: #222;
+}
+.pull-quote p { margin-bottom: 0; font-size: 19px; font-style: italic; }
+
+/* ── Stat block ── */
+.stat-block {
+  text-align: center;
+  background: #fff;
+  border: 2px solid #e85d1f;
+  padding: 24px 20px;
+  margin: 24px 0;
+  border-radius: 4px;
+}
+.stat-eyebrow {
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-align: center;
+  color: #e85d1f;
+  margin-bottom: 6px;
 }
-.comparison table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.comparison th, .comparison td {
-  padding: 14px 16px;
-  text-align: left;
+.stat-number {
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  border-bottom: 1px solid #eee;
+  font-size: 54px;
+  font-weight: 900;
+  color: #111;
+  line-height: 1;
+  margin-bottom: 8px;
 }
-.comparison th {
-  background: #f7f7f7;
+.stat-label {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5em;
+}
+
+/* ── Pillar blocks ── */
+.pillar {
+  display: flex;
+  gap: 16px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+.pillar-num {
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #e85d1f;
+  line-height: 1;
+  flex: 0 0 50px;
+}
+.pillar-body h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
   font-weight: 700;
   color: #111;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
-.comparison td:first-child { font-weight: 700; color: #111; }
-.comparison td.bad { color: #c0392b; }
-.comparison td.good { color: #2a8c4a; font-weight: 700; }
+.pillar-body p { font-size: 16px; line-height: 1.55em; margin-bottom: 0; color: #444; }
 
-/* ── Mini testimonials ── */
-.mini-test-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-  margin: 30px 0;
-}
-@media (min-width: 600px) {
-  .mini-test-grid { grid-template-columns: repeat(3, 1fr); }
-}
-.mini-test {
+/* ── Result rows ── */
+.result-row {
+  padding: 12px 16px;
+  margin-bottom: 8px;
   background: #fafafa;
-  padding: 18px;
-  border-radius: 4px;
-  border: 1px solid #eee;
-}
-.mini-test-stars { color: #f5a623; font-size: 13px; letter-spacing: 1px; margin-bottom: 8px; }
-.mini-test-text {
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-size: 14px;
-  line-height: 1.55em;
+  border-left: 3px solid #e85d1f;
+  font-size: 16px;
+  line-height: 1.5em;
   color: #333;
-  font-style: italic;
+}
+.result-row .result-name { font-weight: 700; color: #111; }
+.result-row .result-after { font-weight: 700; color: #111; }
+.result-row .arrow { color: #e85d1f; font-weight: 700; margin: 0 4px; }
+
+/* ── Guarantee box ── */
+.guarantee-box {
+  background: #fff8e6;
+  border: 2px solid #f5a623;
+  padding: 20px 22px;
+  margin: 22px 0;
+  border-radius: 4px;
+}
+.guarantee-box h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #8a5a00;
+  margin-bottom: 8px;
+}
+.guarantee-box p { font-size: 16px; color: #5c4000; margin-bottom: 0; line-height: 1.55em; }
+
+/* ── CTA block ── */
+.cta-block {
+  background: #fff;
+  border: 2px solid #e85d1f;
+  border-radius: 6px;
+  padding: 22px 22px 20px;
+  margin: 18px 0;
+  text-align: center;
+}
+.cta-label {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e85d1f;
+  margin-bottom: 6px;
+}
+.cta-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3em;
   margin-bottom: 10px;
 }
-.mini-test-name {
+.cta-desc {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.5em;
+}
+.cta-price {
   font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #111;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 14px;
 }
-.mini-test-loc {
-  font-family: Montserrat, sans-serif;
-  font-size: 11px;
-  color: #888;
-}
-
-/* ── Final CTA / closer ── */
-.closer-block {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 40px 28px;
-  text-align: center;
-  margin: 40px -28px -60px;
-}
-@media (min-width: 760px) {
-  .closer-block {
-    margin: 40px -60px -60px;
-  }
-}
-.closer-title {
-  font-family: 'Source Serif Pro', Georgia, serif;
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  line-height: 1.3em;
-}
-.closer-text {
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 22px;
-  line-height: 1.6em;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.closer-button {
+.cta-price s { color: #c0392b; }
+.cta-price b { color: #111; font-size: 18px; }
+.cta-button {
   display: inline-block;
   background: #e85d1f;
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  padding: 16px 32px;
+  padding: 14px 28px;
   text-decoration: none;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 7px 1px rgba(0,0,0,0.19);
+  transition: background 0.2s;
 }
-.closer-sub {
-  font-family: Montserrat, sans-serif;
+.cta-button:hover { background: #c94c14; }
+.cta-subtext {
   font-size: 12px;
-  color: #888;
-  margin-top: 14px;
+  color: #999;
+  margin-top: 10px;
 }
 
-/* ── Author bio ── */
-.author-bio {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 24px 0;
-  margin: 30px 0;
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-.author-bio-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+/* ── Sticky bottom bar ── */
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #e85d1f;
+  padding: 12px 15px;
+  text-align: center;
+  z-index: 999;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+.sticky-bar a {
   color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ── FB Comments ── */
+#fbcomments {
+  box-sizing: border-box;
+  border-top: 1px solid #e9eaed;
+  background: #fff;
+  padding-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid #e9eaed;
+  margin-top: 32px;
+}
+#fbcomments h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #3b5998;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+}
+#fbcomments p {
+  margin: 4px 0;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  word-wrap: break-word;
+}
+.comment-holder {
+  position: relative;
+  box-sizing: border-box;
+}
+.comment-input-holder {
+  background: white;
+  margin: 0 10px 10px;
+}
+.comment-input {
+  border: 1px solid #dedede;
+  width: 100%;
+  margin: 0 auto;
+}
+.textbox-facebook {
+  outline: none;
+  border: none;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  color: #a1a1a1;
+}
+.comment-options {
+  border-top: 1px solid #dedede;
+  background: rgb(246, 247, 249);
+  padding: 8px 12px;
+  display: none;
+}
+ul#fbcommentslist {
+  margin: 0 10px 20px 5px;
+  padding: 0;
+  padding-left: 7px;
+  list-style: none;
+}
+ul#fbcommentslist li { margin: 8px 0; }
+li ul { border-left: 1px dotted #d3d6db; }
+.profilepic {
+  float: left;
+  display: block;
+  margin-right: 8px;
+  height: 48px;
+  width: 48px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #ccc;
+  overflow: hidden;
+}
+.profilepic.g1 { background: #3b5998; }
+.profilepic.g2 { background: #333; }
+.profilepic.g3 { background: #e85d1f; }
+.profilepic.g4 { background: #888; }
+.profilepic.g5 { background: #c0392b; }
+.profilepic.g6 { background: #2980b9; }
+.profilepic-initial {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat, sans-serif;
+  color: #fff;
   font-weight: 700;
-  font-size: 22px;
-  flex-shrink: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
-.author-bio-text {
-  font-size: 15px;
-  line-height: 1.55em;
-  color: #555;
-  font-family: 'Source Serif Pro', Georgia, serif;
-}
-.author-bio-text strong {
-  display: block;
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  color: #111;
-  margin-bottom: 2px;
-}
-.author-bio-role {
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  color: #888;
-  margin-bottom: 8px;
-}
+.fbbuttons { height: 25px; }
+.fbbuttons .blue { color: #627aad; font-size: 12px; margin: 0; cursor: pointer; }
+.fbbuttons .grijs { color: #7f7f7f; font-size: 12px; margin: 0; }
+.fbbuttons .like:hover { text-decoration: underline; }
+.fbbuttons .reply:hover { text-decoration: underline; }
+.cmtdatum { cursor: pointer; }
 
-/* ── Footer ── */
-.site-footer {
-  background: #f0f0f0;
+/* Footer */
+.footer {
+  background: #f2f2f2;
   border-top: 1px solid #ddd;
-  padding: 30px 20px;
+  padding: 16px 0 64px;
   text-align: center;
-  font-family: Montserrat, sans-serif;
   font-size: 12px;
-  color: #888;
-  line-height: 1.6em;
-}
-.site-footer a { color: #888; text-decoration: none; margin: 0 8px; }
-.disclosure-text {
-  max-width: 720px;
-  margin: 14px auto 0;
-  font-size: 11px;
   color: #aaa;
-  line-height: 1.5em;
 }
+.footer a { color: #aaa; text-decoration: none; }
 
-/* ── Inline emphasis ── */
-.article-wrap em { font-style: italic; }
-.article-wrap strong { color: #111; font-weight: 700; }
-.article-wrap a.inline-link { color: #e85d1f; text-decoration: underline; }
-
+@media screen and (max-width: 600px) {
+  .headline { font-size: 22px; }
+  .section-header { font-size: 19px; }
+  .stat-number { font-size: 44px; }
+  .breadcrumb { display: none; }
+  .pillar { flex-direction: column; gap: 8px; }
+}
 </style>
 
 <!-- Meta Pixel Code -->
@@ -500,331 +619,336 @@ src="https://www.facebook.com/tr?id=633785972254054&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<!-- CTA click event tracking -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var ctaLinks = document.querySelectorAll('a[href*="dunk-everything-with-auto-trial-3"]');
-  ctaLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if (typeof fbq === 'function') {
-        fbq('trackCustom', 'AdvertorialCTAClick', {
-          page: 'tyler',
-          location: window.location.pathname
-        });
-      }
-    });
-  });
-});
-</script>
-<!-- End CTA click tracking -->
-
 </head>
 <body>
 
-<!-- Brand nav -->
-<div class="brand-nav">
-  <div class="brand-inner">
-    <div class="brand-name">Start Dunking Stories</div>
-    <div class="brand-tagline">Training · Vertical · Player Development</div>
+<!-- Top bar -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="advertorial-label">Start Dunking Stories</div>
+    <div class="trending-label">&#128293; Trending in Basketball</div>
   </div>
 </div>
 
-<!-- Article -->
-<article class="article-wrap">
+<div class="content-wrap">
+  <div class="main-col">
 
-  <!-- Tags -->
-  <div class="article-tags">
-    <span class="tag-cat">Training &amp; Performance</span>
-    <span class="tag-sponsored">Sponsored Content</span>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="#">Home</a> &gt; <a href="#">Basketball Training</a> &gt; Vertical Jump
+    </div>
+
+    <!-- Headline -->
+    <h1 class="headline">He Couldn't Touch Rim All Summer. 21 Days Later He Was Dunking On His Own Hoop.</h1>
+
+    <!-- Subheadline -->
+    <p class="subheadline">It's not your genetics. It's not your height. It's not even how hard you're training. The hoopers who actually start dunking figured out one specific thing the rest haven't, and it has nothing to do with lifting more weight.</p>
+
+    <!-- Stars -->
+    <div class="ratings-row">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="rating-count">6,842 hoopers have read this</span>
+    </div>
+
+    <!-- Author byline -->
+    <div class="byline">
+      <span class="byline-name">Editorial Team</span>
+      <span class="byline-verified">&#10003; Verified Case Study</span>
+      <span class="byline-date">April 2026</span>
+    </div>
+
+    <!-- Hero image -->
+    <img src="https://www.good-drills.com/wp-content/uploads/2026/04/Screenshot-2026-04-26-at-9.00.02-AM.webp" alt="Player dunking in a game" style="width:100%; height:auto; margin-bottom:16px;">
+
+    <!-- Disclosure -->
+    <div class="disclosure">EDITORIAL DISCLOSURE: Sponsored content. Individual results vary.</div>
+
+    <!-- Body copy -->
+    <p>In June, Tyler's standing vert was 22 inches.</p>
+    <p>He knows the exact number. You tend to remember the ones that embarrass you.</p>
+    <p>He'd been playing ball since 6th grade. Decent handle, solid shot, worked harder than most of the kids on his team. But he couldn't dunk. Couldn't even catch rim cleanly on a two-foot jump. His buddies had started throwing it down over the summer and he was still watching from the baseline. Every few weeks he'd test again, expecting something to finally move. It never did.</p>
+    <p>He'd tried the usual stuff. Ran through a YouTube jump program for a month. Did squats three times a week at the gym his brother goes to. Followed some guy on TikTok doing 500 calf raises a day. Bought a pair of those platform jump shoes and wore them to practice until his coach told him to take them off.</p>
+    <p>By August, he'd started asking himself the question every hooper chasing their first dunk eventually asks: <em>Am I just not built for this?</em></p>
+    <p>He wasn't lazy. He wasn't small for his age. He was just stuck. And he couldn't figure out what he was missing.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-header">The Problem He Didn't Know He Had</h2>
+
+    <p>Here's what most hoopers eventually figure out, usually after wasting a year of training.</p>
+
+    <div class="pull-quote">
+      <p>Trying to dunk without a plan is like sprinting on a treadmill. You're working hard. You're sweating. You're burning legs. But the scenery never changes, because you're moving in every direction except the one that actually gets you off the ground.</p>
+    </div>
+
+    <p>Tyler was doing what 95% of hoopers do. He was mixing random jump drills from TikTok, heavy squats from the weight room, and high-volume calf work that was beating his legs up faster than it was building them. None of it was connected. None of it was specific to dunking. And most of it was canceling itself out.</p>
+    <p>The programs he'd tried were one-dimensional. One was all plyometrics, no strength. Another was all lifting, no actual jumping. Another had him doing 60 box jumps a day until his knees were screaming and his vert had gone <em>down</em>. Nobody had ever shown him the order things needed to happen in. Nobody had taught him what dunking actually requires on a mechanical level.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-header">The Coach Who Stopped Him From Quitting</h2>
+
+    <p>In September, a teammate sent Tyler a link. A program called <b>Dunk Everything</b>, built by the coaches at Good Drills, which is a basketball training company that's put thousands of inches on verts over the last few years.</p>
+    <p>The pitch was different from everything else Tyler had seen: <b>21 days, one plan, no guessing.</b> Not "do these five drills a day forever." Not "here's 80 workouts, good luck." A day-by-day schedule, from day one to day twenty-one, built around three specific things and nothing else.</p>
+    <p>Tyler was skeptical. He'd been skeptical for a while. He'd bought two programs that promised the world and delivered a PDF with stick figures and bad advice. But this one came with a guarantee: <b>add 3+ inches in 21 days or get your money back.</b> He figured he had nothing to lose but 19 bucks.</p>
+    <p>He started the program that weekend.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-header">What Happened Next</h2>
+
+    <p>By the end of week one, Tyler's vert was up 1.5 inches. Barely noticeable on a tape measure, but he could feel it on the court. He was getting to spots he couldn't reach before.</p>
+    <p>By the end of week two, he was grabbing rim clean off a one-foot jump.</p>
+    <p>Day 21, on his own hoop in the driveway, he threw down his first dunk. Two-handed, off a dribble, nothing flashy. But it counted. He'd gone from a 22-inch vert to a 28.5.</p>
+
+    <div class="stat-block">
+      <div class="stat-eyebrow">21-Day Result</div>
+      <div class="stat-number">+6.5"</div>
+      <div class="stat-label">Added to Tyler's vertical in three weeks, <strong>without new shoes, new supplements, or extra gym time.</strong></div>
+    </div>
+
+    <p>No new weight room. No new diet. No new equipment. Same Tyler, same body, same schedule.</p>
+    <p>Just a different approach to the pieces he'd never been shown how to put together.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-header">What Actually Changed</h2>
+
+    <p>It wasn't one thing. It was three things, done in the right order.</p>
+
+    <div class="pillar">
+      <div class="pillar-num">1</div>
+      <div class="pillar-body">
+        <h3>Jump Technique</h3>
+        <p>Most hoopers are leaving 2-3 inches on the table before they've even added a pound of muscle, purely because they're jumping wrong. Bad arm swing, wrong penultimate step, weight on the heels. Tyler's takeoff got rebuilt from the ground up on day one. Inches showed up the first week with no new strength at all.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">2</div>
+      <div class="pillar-body">
+        <h3>Jumping Power</h3>
+        <p>Strength matters, but only the kind that transfers to the floor. Tyler stopped grinding heavy back squats and started doing the specific power work that actually makes you explode off two feet. Less volume, more intent. His legs stopped feeling dead and started feeling springy.</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">3</div>
+      <div class="pillar-body">
+        <h3>Specificity</h3>
+        <p>This is the one nobody else does. Dunking is a basketball skill, not a gym exercise. Tyler started doing the exact approach drills, rim work, and basketball-specific jumps that turn raw power into dunks you can actually pull off in a game. The bounce he was building in the weight room finally showed up on the court.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:18px;">Three pillars. Done in the right sequence. That's the difference.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-header">It's Not Just Tyler</h2>
+
+    <div class="result-row"><span class="result-name">Maxim</span> went from a <span>14-inch vert</span> <span class="arrow">&rarr;</span> <span class="result-after">21-inch vert</span></div>
+    <div class="result-row"><span class="result-name">Spencer</span> added <span class="result-after">9 inches in 3 months</span> &mdash; went from 27 to 36</div>
+    <div class="result-row"><span class="result-name">Asher</span> picked up an <span class="result-after">8.5-inch vertical increase</span> and is now working on different plants and jump types</div>
+    <div class="result-row"><span class="result-name">Jacob</span> could dunk in practice but never in games. <span class="result-after">Punched one on a fast break the same day</span> he finished the program</div>
+    <div class="result-row"><span class="result-name">Edison</span> went from sometimes-dunking to <span class="result-after">dunking every single day</span> heading into high school camp</div>
+
+    <p style="margin-top:20px;">These aren't cherry-picked. Good Drills tracks this stuff obsessively. The typical hooper who finishes the 21 days and follows it as written adds <b>3 to 6 inches.</b></p>
+    <p>That's the average. Which means half the guys who go through it do better than that.</p>
+
+    <hr class="divider">
+
+    <h2 class="section-header">Why This Works When Other Programs Haven't</h2>
+
+    <p>The stuff most hoopers have tried before Dunk Everything: free YouTube workouts, random TikTok drills, generic jump programs, and whatever their football coach told them. They all have the same flaw.</p>
+    <p><b>They're one-dimensional.</b></p>
+    <p>A jump workout gives you drills. It doesn't fix your technique. A lifting program gives you strength. It doesn't teach you how to use it on the court. A free plan off YouTube might work for the guy who made it, but it doesn't know anything about where <em>you</em> are or what <em>you</em> need.</p>
+    <p>The combination is what most hoopers are missing. That's why you can grind a program for three months and still not touch rim. You're getting one piece of the puzzle without the other two.</p>
+
+    <div class="pull-quote">
+      <p>Dunk Everything stacks all three. Technique, power, and specificity, in the right order, over 21 days. That's the gap it fills, and it's why hoopers who've tried everything else finally start seeing inches show up.</p>
+    </div>
+
+    <hr class="divider">
+
+    <h2 class="section-header">Is It Right For You?</h2>
+
+    <p><b>Probably not</b> if you're looking for a magic pill, a pair of shoes, or a supplement that does the work for you. If you won't commit to 30 minutes a day for 21 straight days, this isn't the program.</p>
+    <p><b>Probably yes</b> if you're a hooper between 5'6 and 6'6, you've got access to a hoop or a driveway, and you're willing to follow a plan exactly as it's written. Doesn't matter if your current vert is 18 inches or 28. Doesn't matter if you've never touched rim or you're already dunking and want to dunk harder.</p>
+    <p>Good Drills is specific about this because they back the whole thing with a guarantee.</p>
+
+    <div class="guarantee-box">
+      <h3>&#10003; The 3-Inch Guarantee</h3>
+      <p>Complete all 21 days of Dunk Everything exactly as written and if you don't add at least 3 inches to your vertical, email them within 30 days and they'll refund 100% of your money. No questions. The program is $19. The guarantee is in writing. The risk is on them.</p>
+    </div>
+
+    <hr class="divider">
+
+    <h2 class="section-header">What To Do Next</h2>
+    <p>There's one thing to do: start the program.</p>
+
+    <div class="cta-block">
+      <div class="cta-label">Limited-Time Early Access</div>
+      <div class="cta-heading">Start Dunk Everything Today</div>
+      <div class="cta-desc">The full 21-day plan, the technique breakdowns, the day-by-day schedule, plus three free bonuses (Good Drills Membership trial, the Good Recruit System, and Hoops Mindset). Instant access the moment you sign up.</div>
+      <div class="cta-price"><s>$47</s> &nbsp; <b>$19 today</b></div>
+      <a href="https://www.good-drills.com/sp/dunk-everything-with-auto-trial-3/" class="cta-button">&rarr; Start Dunk Everything for $19</a>
+      <div class="cta-subtext">3-inch guarantee. 30-day refund. No questions asked.</div>
+    </div>
+
+    <p style="font-size:13px; color:#999; font-style:italic; margin-top:28px; line-height:1.6em;">This is sponsored content. Results shown are real but not typical. Individual results depend on starting level, consistency, effort, and other factors. The 3-inch guarantee is subject to completing the 21-day program as written. See full terms at checkout.</p>
+
+    <!-- FB Comments -->
+    <div id="fbcomments">
+      <div class="comment-holder">
+        <div class="comment-input-holder">
+          <div class="comment-input">
+            <input type="text" class="textbox-facebook" placeholder="Write a comment..." readonly>
+            <div class="comment-options">
+              <button style="background:#3b5998;color:#fff;border:none;padding:6px 14px;border-radius:3px;font-size:13px;font-weight:700;cursor:default;">Post</button>
+            </div>
+          </div>
+        </div>
+
+        <ul id="fbcommentslist">
+
+          <li>
+            <div class="profilepic g2"><div class="profilepic-initial">JR</div></div>
+            <div style="overflow:hidden;">
+              <h3>Jordan R.</h3>
+              <p>The technique piece in week 1 changed everything for me. Didn't realize I was jumping off the wrong foot my whole life. Picked up 2 inches before I'd even done the strength stuff.</p>
+              <div class="fbbuttons">
+                <span class="blue like">Like</span>&nbsp;&middot;&nbsp;
+                <span class="blue reply">Reply</span>&nbsp;&middot;&nbsp;
+                <span class="grijs cmtdatum">2d</span>&nbsp;&middot;&nbsp;
+                <span class="grijs">&#128077; 47</span>
+              </div>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+
+          <li>
+            <div class="profilepic g3"><div class="profilepic-initial">MT</div></div>
+            <div style="overflow:hidden;">
+              <h3>Marcus T.</h3>
+              <p>Finished the 21 days last week. Went from barely grabbing rim to catching it clean with one hand. I'm 5'10". Anyone telling you short guys can't jump is lying.</p>
+              <div class="fbbuttons">
+                <span class="blue like">Like</span>&nbsp;&middot;&nbsp;
+                <span class="blue reply">Reply</span>&nbsp;&middot;&nbsp;
+                <span class="grijs cmtdatum">1d</span>&nbsp;&middot;&nbsp;
+                <span class="grijs">&#128077; 89</span>
+              </div>
+            </div>
+            <div style="clear:both;"></div>
+            <ul style="padding-left:10px; list-style:none;">
+              <li>
+                <div class="profilepic g4" style="height:36px;width:36px;"><div class="profilepic-initial" style="font-size:13px;">DP</div></div>
+                <div style="overflow:hidden;">
+                  <h3>Devin P.</h3>
+                  <p>Bro I'm 5'8 and just started. How long before you felt it start moving?</p>
+                  <div class="fbbuttons">
+                    <span class="blue like">Like</span>&nbsp;&middot;&nbsp;
+                    <span class="blue reply">Reply</span>&nbsp;&middot;&nbsp;
+                    <span class="grijs cmtdatum">1d</span>&nbsp;&middot;&nbsp;
+                    <span class="grijs">&#128077; 11</span>
+                  </div>
+                </div>
+                <div style="clear:both;"></div>
+              </li>
+              <li>
+                <div class="profilepic g3" style="height:36px;width:36px;"><div class="profilepic-initial" style="font-size:13px;">MT</div></div>
+                <div style="overflow:hidden;">
+                  <h3>Marcus T.</h3>
+                  <p>Honestly day 4-5. Once my arm swing clicked I felt way more pop off the ground. Just follow it exactly.</p>
+                  <div class="fbbuttons">
+                    <span class="blue like">Like</span>&nbsp;&middot;&nbsp;
+                    <span class="blue reply">Reply</span>&nbsp;&middot;&nbsp;
+                    <span class="grijs cmtdatum">22h</span>&nbsp;&middot;&nbsp;
+                    <span class="grijs">&#128077; 18</span>
+                  </div>
+                </div>
+                <div style="clear:both;"></div>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="profilepic g4"><div class="profilepic-initial">BH</div></div>
+            <div style="overflow:hidden;">
+              <h3>Brandon H.</h3>
+              <p>Was skeptical about another vert program after wasting money on two others. But 19 bucks + the guarantee made it an easy yes. Three weeks in, up 4 inches. Not dunking yet but I'm grabbing rim clean on both sides now.</p>
+              <div class="fbbuttons">
+                <span class="blue like">Like</span>&nbsp;&middot;&nbsp;
+                <span class="blue reply">Reply</span>&nbsp;&middot;&nbsp;
+                <span class="grijs cmtdatum">14h</span>&nbsp;&middot;&nbsp;
+                <span class="grijs">&#128077; 33</span>
+              </div>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+
+          <li>
+            <div class="profilepic g3" style="background:#c94c14;"><div class="profilepic-initial">AK</div></div>
+            <div style="overflow:hidden;">
+              <h3>Anthony K.</h3>
+              <p>The specificity part is what nobody else teaches. I was strong in the gym and could jump off two feet in shoes, but I couldn't do anything on the court. Approach drills were the missing piece for me.</p>
+              <div class="fbbuttons">
+                <span class="blue like">Like</span>&nbsp;&middot;&nbsp;
+                <span class="blue reply">Reply</span>&nbsp;&middot;&nbsp;
+                <span class="grijs cmtdatum">9h</span>&nbsp;&middot;&nbsp;
+                <span class="grijs">&#128077; 52</span>
+              </div>
+            </div>
+            <div style="clear:both;"></div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- /FB Comments -->
+
   </div>
 
-  <!-- Headline -->
-  <h1 class="headline">Every YouTube Jump Program Told Me to Train Harder. I Did, For 6 Months. Here's What Actually Happened.</h1>
+  <!-- Right Rail -->
+  <div class="right-rail">
+    <div class="rail-sticky">
+      <div class="rail-cta-box">
+        <div class="rail-cta-header">Start For $19 &rarr; Today Only</div>
 
-  <!-- Dek -->
-  <p class="dek">I followed every workout. Every drill. Every program I could find. I trained harder than anyone on my team. Six months later, my vert was <em>lower</em> than when I started.</p>
+        <div class="rail-stat">
+          <div class="rail-stat-num">+3 to 6"</div>
+          <div class="rail-stat-label">Average vertical added in 21 days</div>
+        </div>
 
-  <!-- Author byline -->
-  <div class="byline-block">
-    <div class="author-avatar">TM</div>
-    <div class="byline-text">
-      <span class="author-name">Tyler M.</span>
-      High School Junior · April 2026 · 11 min read
+        <div class="rail-testimonial">
+          <div class="rt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          "Went from a 14-inch vert to 21. This is insane."
+          <div class="rt-name">Maxim, Dunk Everything member</div>
+        </div>
+
+        <div class="rail-testimonial">
+          <div class="rt-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          "3 inches in the first 2 weeks, up 6 total. 24 to 30. My rhythm and finishing feel totally different."
+          <div class="rt-name">Izaac, Dunk Everything member</div>
+        </div>
+
+        <div class="rail-cta-inner">
+          <p><b>Start the 21-day program today for $19</b> and add 3+ inches to your vert or your money back.</p>
+          <div class="rail-price-strike"><s>$47</s> &nbsp; <b>$19</b> today</div>
+          <a href="https://www.good-drills.com/sp/dunk-everything-with-auto-trial-3/" class="rail-button">&rarr; Start Dunk Everything</a>
+          <div class="rail-subtext">3-inch guarantee. 30-day refund.</div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- /Right Rail -->
 
-  <!-- ─── OPENING ─── -->
-  <p>I'm 16. I've been playing basketball since 6th grade. I'm 6 feet tall and I'd describe myself as a hard worker — every coach I've ever played for has told me that, which I always took as a compliment.</p>
-
-  <p>When I sat down at the end of last season and realized I still couldn't dunk, I wasn't sad. I was angry. Because I'd been working on it for almost a year and a half. I'd done everything the YouTube guys said. I'd done everything the TikTok trainers said. I'd done what my older brother told me, and what the strongest kid on my team told me, and what the videos at the top of every Google search told me.</p>
-
-  <p>None of it had worked.</p>
-
-  <p>My standing vert at the end of June was 22 inches. Three inches less than the previous September.</p>
-
-  <p>I had trained for nine months and gotten <em>worse.</em></p>
-
-  <p>This is the story of what happened to me, and what finally fixed it. I'm writing it down because I've talked to a lot of guys at my school and at AAU tournaments who are stuck in the exact same place I was. I want them to read this and figure it out faster than I did.</p>
-
-  <!-- Inline image -->
-  <div class="inline-img">
-    <img src="https://www.good-drills.com/wp-content/uploads/2026/04/IMG_7140.webp" alt="Tyler grabbing rim clean">
-    <div class="inline-img-caption">This photo is from Day 1 of a jump program that finally worked for me. Safe to say I am happy with my 21 Day transformation.</div>
-  </div>
-
-  <!-- Big pull quote -->
-  <div class="big-pull">"I did everything every jump program told me to do. I tracked every workout. I never missed a session. And at the end of nine months, my vert was lower than when I started."</div>
-
-  <!-- ─── ACT 1: THE BAD PROGRAM ─── -->
-
-  <h2 class="section-title">Day 1: The Honeymoon</h2>
-
-  <p>I started on a Monday, because that's what you do. I'd just bought a new program — I won't say which one, but you've seen it. Big YouTube guy, lots of testimonials, promised 10+ inches in 12 weeks. I downloaded the PDF, set up an alarm for 5:45 AM, and bought a pair of those weighted training shoes I'd been saving up for.</p>
-
-  <p>The first workout was intense. Plyometric circuit, depth jumps, calf raises, weighted squat jumps, repeat for 45 minutes. I was drenched. My legs were shaking. I felt like I was finally doing something <em>real.</em></p>
-
-  <p>That first week, my vert went up an inch. I went from 22 to 23. I called my buddy. I told my mom. I bought a new pair of jump-tracking sleeves as a reward.</p>
-
-  <h2 class="section-title">Week Two: The Plateau</h2>
-
-  <p>Week two, nothing moved.</p>
-
-  <p>I went back through my workout log. I hadn't skipped anything. I'd hit every rep. I tightened up — I added an extra plyo session at lunch. I cut out the rest day on Sunday. I started doing 200 calf raises every night before bed.</p>
-
-  <p>Still nothing.</p>
-
-  <p>I told myself this was normal. Plateaus happen. My body was adjusting. I just needed to push harder.</p>
-
-  <!-- Explainer box 1 -->
-  <div class="explainer">
-    <div class="explainer-title">What "Train Harder" Actually Does To A High Schooler's Vert</div>
-    <ul class="explainer-list">
-      <li>High-volume plyometrics done daily without recovery accumulate joint stress faster than they build power — most teenagers' tendons can't handle the load they're being told to do</li>
-      <li>Doing 200+ calf raises a night strengthens an endurance pattern, not the explosive twitch fibers that make you jump</li>
-      <li>Stacking jump sessions on top of basketball practice means every rep is a fatigued rep — fatigued reps train the body to be slower off the floor, not faster</li>
-      <li>The "more volume = more progress" assumption is built for adults with full recovery — applied to a 16-year-old also playing two hours a day, it backfires</li>
-      <li>Most high schoolers doing free YouTube programs lose vert over a long enough timeline. They're not failing the program. The program is wrong for them.</li>
-    </ul>
-  </div>
-
-  <h2 class="section-title">Weeks Three Through Six: The Spiral</h2>
-
-  <p>By week three I was doing two-a-days. Jump training in the morning, conditioning at night, basketball practice in between. I'd added a depth jump variation I'd seen on TikTok where you drop off a 36-inch box. My knees started hurting. I told myself it was a good kind of sore.</p>
-
-  <p>I was tired all the time. Not the good kind of tired that comes from a hard practice — the hollow kind. I'd wake up at 5:30 and feel like I hadn't slept. I started getting beat in 1-on-1 by guys I used to torch. My handle got worse. I felt slower on every drive.</p>
-
-  <p>I went home from a tournament in late July where I'd played some of the worst basketball of my life and finally tested my vert again on the gym wall.</p>
-
-  <p>21.5 inches.</p>
-
-  <p>I'd lost half an inch in three weeks of the hardest training I'd ever done. I sat on the gym floor for a long time.</p>
-
-  <!-- Pull quote -->
-  <div class="big-pull">"I was doing more than anyone on my team. My vert was getting worse. My handle was getting worse. My body felt 30. And every program I'd bought told me the answer was to keep pushing."</div>
-
-  <h2 class="section-title">Week Seven: Something Is Wrong</h2>
-
-  <p>By the end of July I had been on this kind of program — the YouTube/TikTok grind-it-out style — for over six months across three different programs. I'd lost vert. I was beat up. I was slower in every direction.</p>
-
-  <p>I went to the trainer my school uses for football and told him what was happening. He looked at my workout log, asked a few questions, and said, "It looks like you're working hard. Just stay consistent."</p>
-
-  <p>Stay consistent.</p>
-
-  <p>I was 16 years old, doing two-a-days six days a week, and a guy who is supposed to know things about training was telling me to be more patient.</p>
-
-  <p>I went home and finally Googled something I'd been afraid to Google: <em>"Why is my vert going down."</em></p>
-
-  <!-- Explainer box 2 -->
-  <div class="explainer">
-    <div class="explainer-title">What I Didn't Know (And No YouTube Program Was Going To Tell Me)</div>
-    <p>Your nervous system only adapts to high-quality reps. When you're tired, your reps stop being high-quality — they become noise. They train you to be average, not explosive.</p>
-    <p>Most jump programs ignore this completely. They prescribe huge volumes of mediocre reps because volume looks impressive on a workout sheet. Volume doesn't make you jump higher. <strong>Quality reps in a fresh state make you jump higher.</strong> You can't have one without the other.</p>
-    <p>The cruel part: the harder you push when you're already cooked, the further behind you fall. Your body interprets nonstop fatigue as a survival situation and stops adapting altogether. You end up with knees that hurt, a slower first step, and a vert that's gone the wrong direction. This isn't a character flaw. It's biology. And it's what happens to most kids who follow generic jump programs without anyone telling them this.</p>
-  </div>
-
-  <!-- ─── ACT 2: THE DISCOVERY ─── -->
-
-  <h2 class="section-title">The Article That Changed Everything</h2>
-
-  <p>I don't remember the exact search. Something like "why is my vert getting lower from training." I ended up on a forum where a kid had posted a story almost exactly like mine — three programs, nine months, vert went backward.</p>
-
-  <p>One reply stopped me cold. Some guy had written:</p>
-
-  <p><em>"I was doing three jump sessions a day and lost two inches in two months. I started a 21-day program that had me doing way less work and went up 6 inches in three weeks. Coaches at school thought I was lying."</em></p>
-
-  <p>I read it three times.</p>
-
-  <p>The program he linked was something called <strong>Dunk Everything</strong> from a basketball training company called Good Drills. The pitch was almost offensively simple. It was <em>21 days</em>, not 12 weeks. The daily sessions were short — most were under 30 minutes. Some days were straight rest. The whole thing was built around three things: jump technique, jumping power, and basketball-specific work.</p>
-
-  <p>The whole thing was $19.</p>
-
-  <p>I'd already spent way more than that on programs that didn't work. I'd spent way more than that on shoes that did nothing. I was so beat up and so frustrated that I almost didn't trust something that asked for less.</p>
-
-  <p>But it had a guarantee. <strong>Add 3 inches in 21 days or get your money back.</strong> I figured if it was a scam I'd at least get my $19 back.</p>
-
-  <p>I bought it that night.</p>
-
-  <!-- Soft inline CTA -->
-  <div class="soft-cta">
-    <div class="soft-cta-title">Sound familiar?</div>
-    <p>If you've been grinding YouTube jump programs and your vert is stuck — or going backward — Dunk Everything was built for exactly this situation. A 21-day plan, designed around quality over volume, with a 3-inch guarantee.</p>
-    <a href="https://www.good-drills.com/sp/dunk-everything-with-auto-trial-3/">See How Dunk Everything Works →</a>
-  </div>
-
-  <!-- ─── ACT 3: THE TURN ─── -->
-
-  <h2 class="section-title">Day 1 of Dunk Everything: I Did The Opposite Of Everything I'd Been Doing</h2>
-
-  <p>The first session was 22 minutes long. <em>Twenty-two minutes.</em> I'd been doing 90.</p>
-
-  <p>It was mostly technique. The coach walked me through my approach step by step — how my last two steps should look, where my arms should be, what my chest should be doing. I'd never had anyone explain any of this to me. Every program I'd bought before assumed I already knew how to jump.</p>
-
-  <p>I was annoyed by how short the workout was. I almost added a TikTok plyo circuit on top of it because I felt like I hadn't done enough. I made myself stop. The whole point was that I'd been overdoing it for six months. The plan said rest. So I rested.</p>
-
-  <p>Day 2 was 28 minutes. Day 3 was a full rest day. Day 4 had actual jumping in it — but only 12 reps, every one at full intent, with full rest between.</p>
-
-  <p>Twelve reps. I used to do a hundred.</p>
-
-  <h2 class="section-title">Week One: Something Felt Different</h2>
-
-  <p>End of week one, I tested my vert on the gym wall.</p>
-
-  <p>23.5 inches. Up an inch and a half from where I'd been at the start of the program.</p>
-
-  <p>Could have been a fluke. I'd been making progress before that fizzled out, too. I kept going.</p>
-
-  <p>The thing I noticed wasn't the number. It was that my legs felt <em>different</em>. They felt fresh. Springy. I'd forgotten what that even felt like — six months of two-a-days had made permanently sore feel normal. Two and a half weeks of doing less work and my body felt like a different body.</p>
-
-  <h2 class="section-title">Week Two: Grabbing Rim For The First Time</h2>
-
-  <p>Day 14, in my driveway, I caught rim clean off a one-foot jump.</p>
-
-  <p>I'd never done that. Off two feet, sure, sometimes I could brush the bottom of the net. Off one foot? Never. I had to test it three more times to make sure it was real.</p>
-
-  <p>My vert was up to 26.5. Four and a half inches in two weeks of training that, by the standards of every program I'd done before, was barely training at all.</p>
-
-  <!-- Inline image: Day 21 first dunk -->
-  <div class="inline-img">
-    <img src="https://www.good-drills.com/wp-content/uploads/2026/04/IMG_7141.webp" alt="Tyler throwing down his first dunk">
-    <div class="inline-img-caption">Day 21. My first dunk. One-handed, off a dribble, nothing flashy. But it counted.</div>
-  </div>
-
-  <h2 class="section-title">Day 21: I Threw Down My First Dunk</h2>
-
-  <p>It happened on a Saturday morning. I'd come home from a 7 AM practice, had breakfast, and went out to the driveway to do day 21 — the final session of the program.</p>
-
-  <p>The session ends with what they call a "dunk attempt window." You go for it. If you get it, you got it.</p>
-
-  <p>I missed the first three. Hands on rim, ball stuck on the front. Misses, but closer than they'd ever been.</p>
-
-  <p>The fourth one went down.</p>
-
-  <p>One-handed, off a dribble, nothing flashy. But it counted. I tested my vert that night.</p>
-
-  <p>28.5 inches. <strong>Six and a half inches in 21 days.</strong></p>
-
-  <p>For comparison: my previous nine months of training had cost me three inches.</p>
-
-  <!-- Comparison table -->
-  <div class="comparison">
-    <div class="comparison-header">What Changed When I Stopped Following YouTube Programs</div>
-    <table>
-      <thead>
-        <tr><th>Metric</th><th>YouTube Era (9 months)</th><th>Dunk Everything (21 days)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Vertical change</td><td class="bad">−3 inches</td><td class="good">+6.5 inches</td></tr>
-        <tr><td>Training time/day</td><td>60–90 min</td><td>20–30 min</td></tr>
-        <tr><td>Rest days/week</td><td>0–1</td><td>2</td></tr>
-        <tr><td>Reps per session</td><td>100+</td><td>12–20</td></tr>
-        <tr><td>Rim catches off 1 foot</td><td class="bad">Never</td><td class="good">Daily</td></tr>
-        <tr><td>How my body felt</td><td class="bad">Beat up, slow</td><td class="good">Springy, fresh</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- ─── ACT 4: REFLECTION ─── -->
-
-  <h2 class="section-title">Why This Happens (The Short Version)</h2>
-
-  <p>Here's what I figured out. Most jump programs you find online are written for content, not for results. They look impressive on YouTube because they're loud and sweaty. They sell well because they make you feel like you're working hard. But they ignore the actual mechanism that makes you jump higher.</p>
-
-  <p>You don't get more explosive by doing more reps. You get more explosive by doing <em>better</em> reps — full intent, fully recovered, at the right intensity. Volume that exceeds what your body can recover from doesn't just stop helping. It actively makes you slower.</p>
-
-  <p>This isn't theory. It's what every serious strength and conditioning coach in the world has known for 30 years. It just hasn't made it into the YouTube videos kids my age actually watch. Those videos are made by guys whose business is selling more videos, not training basketball players.</p>
-
-  <p>Dunk Everything works because it gets the basics right. Short sessions. Full intent. Real rest. Technique that most kids have never been taught. Progressive load that adapts as you do. It's not magic. It's just actual training, finally written for high school hoopers.</p>
-
-  <!-- Mini testimonials -->
-  <div class="mini-test-grid">
-    <div class="mini-test">
-      <div class="mini-test-stars">★★★★★</div>
-      <div class="mini-test-text">"3 inches in the first 2 weeks, up 6 total. 24 to 30. My rhythm and finishing feel totally different."</div>
-      <div class="mini-test-name">Izaac H.</div>
-      <div class="mini-test-loc">Good Drills member</div>
-    </div>
-    <div class="mini-test">
-      <div class="mini-test-stars">★★★★★</div>
-      <div class="mini-test-text">"Bro I tried so many things before this. Up 4 inches in three weeks. Wish I'd found it a year ago."</div>
-      <div class="mini-test-name">Brandon H.</div>
-      <div class="mini-test-loc">Good Drills member</div>
-    </div>
-    <div class="mini-test">
-      <div class="mini-test-stars">★★★★★</div>
-      <div class="mini-test-text">"Was strong in the gym, useless on the court. The basketball-specific work was the missing piece."</div>
-      <div class="mini-test-name">Anthony K.</div>
-      <div class="mini-test-loc">Good Drills member</div>
-    </div>
-  </div>
-
-  <!-- Closer prose -->
-  <h2 class="section-title">What I'd Tell Myself A Year Ago</h2>
-
-  <p>I don't blame the YouTube guys. They were selling what their audience clicked on. Loud workouts get views. "Less work is the answer" doesn't.</p>
-
-  <p>What I'd tell myself a year ago is that working harder isn't the answer when you're working at the wrong things. You can grind for nine months and lose vert. I did. The kids in my locker room who actually started dunking weren't training harder than me. They were training right. That's a totally different thing, and nobody had told me the difference until I found Dunk Everything.</p>
-
-  <p>If you've been grinding programs and your vert isn't moving, I want you to know something: you're not broken. You're not "just not built for this." You're not lazy. You're just using the wrong tool for the job.</p>
-
-  <p>I wasted nine months figuring that out. I hope you waste less.</p>
-
-  <!-- Final CTA / closer -->
-  <div class="closer-block">
-    <div class="closer-title">If You're Stuck, This Is What Worked For Me.</div>
-    <div class="closer-text">21 days. Less work, not more. 3-inch guarantee or your money back. The full program is $19. I wish I'd bought it nine months earlier.</div>
-    <a href="https://www.good-drills.com/sp/dunk-everything-with-auto-trial-3/" class="closer-button">→ Start Dunk Everything for $19</a>
-    <div class="closer-sub">3-inch guarantee · 30-day refund · Instant access</div>
-  </div>
-
-</article>
-
-<!-- Author bio -->
-<div style="max-width: 720px; margin: 0 auto; padding: 0 20px;">
-  <div class="author-bio">
-    <div class="author-bio-avatar">TM</div>
-    <div class="author-bio-text">
-      <strong>Tyler M.</strong>
-      <div class="author-bio-role">High School Junior · Good Drills member</div>
-      Tyler is a 16-year-old basketball player from the Midwest. He completed Dunk Everything in spring 2026 after nine months of failed jump training. He shares his story so other high school hoopers can avoid making the same mistakes.
-    </div>
-  </div>
 </div>
 
-<!-- Footer -->
-<div class="site-footer">
-  <strong style="color:#555;">Start Dunking Stories</strong><br>
-  Training · Vertical · Player Development<br>
-  <div style="margin: 14px 0;">
-    <a href="#">About</a>·
-    <a href="#">Contact</a>·
-    <a href="#">Privacy Policy</a>·
-    <a href="#">Terms</a>·
-    <a href="#">Advertise</a>
-  </div>
-  © 2026 Start Dunking Stories. All rights reserved.
-  <div class="disclosure-text">
-    DISCLOSURE: This article contains sponsored content. Start Dunking Stories may receive compensation when you click links and make purchases. This does not affect our editorial integrity. Results mentioned are not typical. Individual results will vary.
-  </div>
+<!-- Sticky bar -->
+<div class="sticky-bar">
+  <a href="https://www.good-drills.com/sp/dunk-everything-with-auto-trial-3/">&rarr; Start Dunk Everything for $19 &mdash; 3-Inch Guarantee</a>
+</div>
+
+<div class="footer">
+  &copy; 2026 &bull; Sponsored Content &bull; <a href="#">Privacy Policy</a> &bull; <a href="#">Terms</a>
 </div>
 
 </body>
