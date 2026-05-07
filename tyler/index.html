@@ -5,24 +5,6 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Every YouTube Jump Program Told Me to Train Harder. I Did, For 6 Months. Here's What Actually Happened.</title>
-  <!-- Meta Pixel -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '633785972254054');
-fbq('track', 'PageView');
-fbq('trackCustom', 'ViewedTylerPage');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=633785972254054&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel -->
 <meta name="description" content="I followed every workout, every drill, every program I could find. I trained harder than anyone on my team. Six months later my vert was lower than when I started.">
 <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700,700italic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
@@ -498,7 +480,74 @@ h2.section-title {
 .article-wrap strong { color: #111; font-weight: 700; }
 .article-wrap a.inline-link { color: #e85d1f; text-decoration: underline; }
 
+/* ── Sticky bottom CTA bar ── */
+body {
+  padding-bottom: 70px; /* space so content isn't hidden under sticky bar */
+}
+.sticky-cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e85d1f;
+  padding: 14px 16px;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 -3px 12px rgba(0,0,0,0.18);
+}
+.sticky-cta-bar a {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  line-height: 1.3em;
+}
+@media (max-width: 480px) {
+  .sticky-cta-bar { padding: 12px 14px; }
+  .sticky-cta-bar a { font-size: 13px; }
+}
+
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '633785972254054');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=633785972254054&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- CTA click event tracking -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var ctaLinks = document.querySelectorAll('a[href*="dunk-everything-with-auto-trial-3"]');
+  ctaLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom', 'AdvertorialCTAClick', {
+          page: 'tyler',
+          location: window.location.pathname
+        });
+      }
+    });
+  });
+});
+</script>
+<!-- End CTA click tracking -->
+
 </head>
 <body>
 
@@ -806,6 +855,11 @@ h2.section-title {
   <div class="disclosure-text">
     DISCLOSURE: This article contains sponsored content. Start Dunking Stories may receive compensation when you click links and make purchases. This does not affect our editorial integrity. Results mentioned are not typical. Individual results will vary.
   </div>
+</div>
+
+<!-- Sticky bottom CTA bar -->
+<div class="sticky-cta-bar">
+  <a href="https://www.good-drills.com/sp/dunk-everything-with-auto-trial-3/">→ Start Dunk Everything for $19 — 3-Inch Guarantee</a>
 </div>
 
 </body>
